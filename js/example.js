@@ -4,14 +4,8 @@ $(function() {
     var $el, leftPos, newWidth;
         $mainNav2 = $("#example-two");
     
-    /*
-        EXAMPLE ONE
-    */
-    
-    /* Add Magic Line markup via JavaScript, because it ain't gonna work without */
     $("#example-one").append("<li id='magic-line'></li>");
     
-    /* Cache it */
     var $magicLine = $("#magic-line");
     
     $magicLine
@@ -36,12 +30,6 @@ $(function() {
         });    
     });
     
-    
-    
-    
-    /*
-        EXAMPLE TWO
-    */
     
     $mainNav2.append("<li id='magic-line-two'></li>");
     
@@ -74,5 +62,7 @@ $(function() {
     
     /* Kick IE into gear */
     $(".current_page_item_two a").mouseenter();
+    
+
     
 });

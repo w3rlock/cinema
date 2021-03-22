@@ -11,7 +11,7 @@
 				<form>
 				<select onchange="this.form.submit()" name="city">
 					<?php 
-					$que=mysqli_query($con, "select * from tbl_theatre");
+					$que=mysqli_query($con, "select * from tbl_theatre group by place");
 
 						while($m=mysqli_fetch_array($que))
 						{
@@ -32,7 +32,7 @@
 						echo '
 						<div class="theatre">
 						<a href="th_desc.php?name='.$m['name'].'&id='.$m['id'].'">'.$m['name'].'</a>
-						<p class="address">Address</p>
+						<p class="address">'.$m['address'].'</p>
 						</div>';
 					}}
 					?>
