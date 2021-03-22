@@ -10,7 +10,7 @@ if(isset($_GET["id"])){
     $que=mysqli_query($con, "select * from tbl_shows WHERE theatre_id=" . $theatre_id ." AND `status` = 1");
     while($m=mysqli_fetch_array($que)){
         echo '<br>';
-        echo '<a href="google.com">'.$m['start_date'].'</a>';
+        echo '<a href="th_desc.php?name='.$_GET['name'].'&id='.$_GET['id'].'&start_date='.$m['start_date'].'">'.$m['start_date'].'</a>';
     }
     if(!isset($_GET["start_date"])){
         $que=mysqli_query($con, "select * from tbl_shows WHERE theatre_id=" . $theatre_id ." AND `status` = 1");

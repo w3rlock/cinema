@@ -31,7 +31,7 @@
 						{
 						echo '
 						<div class="theatre">
-						<a href=#>'.$m['name'].'</a>
+						<a href="th_desc.php?name='.$m['name'].'&id='.$m['id'].'">'.$m['name'].'</a>
 						<p class="address">Address</p>
 						</div>';
 					}}

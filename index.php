@@ -18,7 +18,7 @@ include('header.php');
 				?>
 					<li>
 						<div class="movie">
-							<a href="about.php?id=<?php echo $m['movie_id'];?>">
+							<a href="about.php?id=<?php echo $m['movie_id'].'&city=';?>">
 							<img src="<?php echo $m['image'];?>" alt=""></a>
 								<div class="stats">
 									<img src="imagesnew/people.svg" width="30px" height="30px" alt="">
@@ -47,7 +47,7 @@ include('header.php');
 				?>
 					<li>
 						<div class="movie">
-						<a href="about.php?id=<?php echo $m['movie_id'];?>">
+						<a href="about.php?id=<?php echo $m['movie_id'].'&city=';?>">
 							<img src="<?php echo $m['image'];?>" alt=""></a>
 								<div class="stats">
 									<img src="imagesnew/people.svg" width="30px" height="30px" alt="">
@@ -76,7 +76,7 @@ include('header.php');
 					?>
 						<li>
 							<div class="movie">
-							<a href="about.php?id=<?php echo $m['movie_id'];?>">
+							<a href="about.php?id=<?php echo $m['movie_id'].'&city=';?>">
 								<img src="<?php echo $m['image'];?>" alt=""></a>
 									<div class="stats">
 										<img src="imagesnew/people.svg" width="30px" height="30px" alt="">
